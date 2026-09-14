@@ -1,4 +1,2 @@
 python==3.13
 pandas==3.0.5
-pubchempy==1.0.5
-rdkit==2026.3.5
