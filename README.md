@@ -8,14 +8,14 @@ It is advised to create a virtual environment using Anaconda Prompt: conda creat
 Once created, install the libraries in the requirements.txt file.
 
 ## Required input files
-All files must be in the same folder as peak_identification_base.py.\
-**Reference chromatogram**\
+All files must be in the same folder as peak_identification_base.py.
+### Reference chromatogram
 The default name is reference_chromatogram.txt.\
-It must be tab separated and contain: Peak #, Sample, Area S1, Name, 1st Dimension Time (min).\
-**Input files**\
+It must be tab separated and contain: Peak #, Sample, Area S1, Name, 1st Dimension Time (min).
+### Input files
 Input files must be tab-separated .txt files with the same columns.\
-The reference file and files ending in _identified.txt are excluded automatically.\
-**Optional CSV library**\
+The reference file and files ending in _identified.txt are excluded automatically.
+### Optional CSV library
 A CSV file is optional. It must contain: Name,Min_RT_min,Max_RT_min.\
 Example:\
 Name,Min_RT_min,Max_RT_min\
@@ -24,14 +24,14 @@ Compound B,12.10,12.70\
 The script calculates:\
 Mean_RT_min: midpoint between minimum and maximum RT.\
 Std_RT_min: half the interval width.\
-The CSV library is applied only to peaks still unidentified after reference chromatogram matching. If no valid CSV file is found, this step is skipped automatically.\
+The CSV library is applied only to peaks still unidentified after reference chromatogram matching. If no valid CSV file is found, this step is skipped automatically.
 
 ## Usage
 Place the files in the script folder and run: peak_identification_base.py (_e.g._, using VS code).\
 The script creates files with the suffix: _identified.txt.\
 For example:\
 A1.txt\
-A1_identified.txt\
+A1_identified.txt
 
 ## Processing steps
 The script:
@@ -53,4 +53,4 @@ FILE_PATTERN\
 RT_TOLERANCE\
 LOW_AREA_THRESHOLD\
 EARLY_RT_THRESHOLD\
-COMPOUNDS_TO_REMOVE\
+COMPOUNDS_TO_REMOVE
