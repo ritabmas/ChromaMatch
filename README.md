@@ -1,11 +1,23 @@
-# gc_peak_identification_tool
-This tool automatically identifies peaks in chromatograms using:
-1. Retention-time similarity against reference_chromatogram.txt.
-2. An optional compound library in CSV format for peaks not identified in the reference chromatogram.
+# ChromaMatch
+`ChromaMatch` is a Python tool for automatically identifying peaks in chromatograms using based on Retention-Time (RT) matching.\
+The toll identified compounds using:
+1. RT similarity against a reference chromatogram.
+2. An optional compound library in CSV format for peaks that remain unindetified after chromatogram matching.\
+The resulting identified peak tables are saved as new `.txt`files with the suffix `_identified`.
 
 ## Requirements
-It is advised to create a virtual environment using Anaconda Prompt: conda create --name NAME python=3.13\
-Once created, install the libraries in the requirements.txt file.
+- Python 3.13
+- pandas 3.0.5\
+A dedicated Python environment is recommended.\
+For example, uding _Anaconda Prompt_):\
+```
+conda create --name NAME python=3.13\
+conda activate NAME\
+```
+Then install the required Python packages:\
+```
+pip install -r requirements.txt
+```
 
 ## Required input files
 All files must be in the same folder as peak_identification_base.py.
