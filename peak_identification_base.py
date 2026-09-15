@@ -62,7 +62,6 @@ COMPOUNDS_TO_REMOVE = [
     "tetrasiloxane, decamethyl-",
     "column bleeding",
     "methylamine",
-    "trimethylsilyl",
     "_der",
     "di-trimethylsilyl peroxide",
 ]
