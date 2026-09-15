@@ -7,7 +7,7 @@ The resulting identified peak tables are saved as new `.txt` files with the suff
 
 ## Requirements
 - Python 3.13
-- pandas 3.0.5\\
+- pandas 3.0.5\
 A dedicated Python environment is recommended.\
 For example, using _Anaconda Prompt_:
 ```
@@ -82,7 +82,7 @@ Compound B,12.10,12.70
 ```
 For each compound, the script calculates:
 - Mean_RT_min: midpoint between minimum and maximum RT.
-- Std_RT_min: half the interval width.\\
+- Std_RT_min: half the interval width.\
 The compound library is applied only to peaks that remain unidentified after matching against the reference chromatogram.\
 If no valid CSV library is found, this step is skipped automatically.\
 An example compound library is provided in `examples/example_library.csv`
