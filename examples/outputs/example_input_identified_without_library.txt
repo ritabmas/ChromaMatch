@@ -1,0 +1,13 @@
+Peak #	Sample	Area S1	Name	1st Dimension Time (min)
+3	A4	28.65	Compound A	1.36333
+5	A4	107.03	Compound B	1.445
+19	A4	48.13	Compound C	6.53667
+20	A4	28.18	Compound D	6.57333
+26	A4	27.02	Peak	9.58667
+37	A4	737.67	Peak	11.5033
+49	A4	190.38	Compound K	21.23
+61	A4	218.31	Compound M	22.725
+62	A4	372.24	Compound M	22.765
+63	A4	67.21	Compound M	22.82
+65	A4	107.06	Compound N	22.9833
+66	A4	23.64	Compound N	23.0617
