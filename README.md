@@ -9,7 +9,7 @@ The resulting identified peak tables are saved as new `.txt`files with the suffi
 - Python 3.13
 - pandas 3.0.5\
 A dedicated Python environment is recommended.\
-For example, uding _Anaconda Prompt_):
+For example, using _Anaconda Prompt_:
 ```
 conda create --name NAME python=3.13
 conda activate NAME
@@ -19,17 +19,17 @@ Then install the required Python packages:
 pip install -r requirements.txt
 ```
 ## Repository structure
-ChromaMatch/ 
-│ 
-├── peak_identification_base.py 
-├── requirements.txt 
-├── README.md 
-├── LICENSE 
-│ 
-└── examples/ 
-    ├── reference_chromatogram.txt 
-    ├── example_input.txt 
-    └── example_library.csv
+ChromaMatch/\
+│\
+├── peak_identification_base.py\ 
+├── requirements.txt\
+├── README.md\
+├── LICENSE\ 
+│\ 
+└── examples/\ 
+    ├── reference_chromatogram.txt\ 
+    ├── example_input.txt\ 
+    └── example_library.csv\
 The `examples/` folder contains input files that can be used to understand the required file formats and test the script.
 
 ## Required input files
@@ -80,7 +80,7 @@ Compound B,12.10,12.70
 ```
 For each compound, the script calculates:
 - Mean_RT_min: midpoint between minimum and maximum RT.
-- Std_RT_min: half the interval width.
+- Std_RT_min: half the interval width.\
 The compound library is applied only to peaks that remain unidentified after matching against the reference chromatogram.\
 If no valid CSV library is found, this step is skipped automatically.\
 An example compound library is provided in `examples/example_library.csv`
