@@ -19,17 +19,19 @@ Then install the required Python packages:
 pip install -r requirements.txt
 ```
 ## Repository structure
-ChromaMatch/\
-│\
-├── peak_identification_base.py\ 
-├── requirements.txt\
-├── README.md\
-├── LICENSE\ 
-│\ 
-└── examples/\ 
-    ├── reference_chromatogram.txt\ 
-    ├── example_input.txt\ 
-    └── example_library.csv\
+```
+ChromaMatch/
+│
+├── peak_identification_base.py
+├── requirements.txt
+├── README.md
+├── LICENSE
+│
+└── examples/
+    ├── reference_chromatogram.txt
+    ├── example_input.txt
+    └── example_library.csv
+```
 The `examples/` folder contains input files that can be used to understand the required file formats and test the script.
 
 ## Required input files
