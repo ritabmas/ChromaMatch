@@ -30,9 +30,13 @@ ChromaMatch/
 └── examples/
     ├── reference_chromatogram.txt
     ├── example_input.txt
-    └── example_library.csv
+    ├── example_library.csv
+    └── outputs/
+        ├── example_input_identified_without_library.txt
+        └── example_input_identified_with_library.txt
 ```
-The `examples/` folder contains input files that can be used to understand the required file formats and test the script.
+The `examples/` folder contains input files that can be used to understand the required file formats and test the script.\
+The `outputs/` folder contains the expected output files for the example.
 
 ## Required input files
 All files must be in the same folder as `peak_identification_base.py`.
@@ -133,7 +137,11 @@ Changing these parameters allows the processing criteria to be adapted to differ
 The `examples/` folder provides files illustrating the expected input formats:
 - `reference_chromatogram.txt`: example reference chromatogram.
 - `example_input.txt`: example chromatogram to be identified.
-- `example_library.csv`: optional compound library.
+- `example_library.csv`: optional compound library.\
+The `outputs/` folder provides files illustrating the expected outputs:
+- `example_input_identified_without_library.txt`: example's output without the optional compound library.
+- `example_input_identified_with_library.txt`: example's output with the optional compound library.
+
 
 ## Output
 For each processed input file, the script creates a new file with the suffix:
